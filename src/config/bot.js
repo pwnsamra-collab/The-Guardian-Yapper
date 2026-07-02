@@ -24,9 +24,9 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Protecting The Verse",
         // Activity type number (0 = Playing).
-        type: 0,
+        type: 4,
       },
     ],
   },
@@ -91,8 +91,8 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#FACC15",
+      secondary: "#1F2937",
 
       // Standard status colors for success/error/warning/info messages.
       success: "#57F287",
@@ -159,9 +159,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Yap",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Yaps",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -204,7 +204,7 @@ export const botConfig = {
   // =========================
   tickets: {
     // Category ID where new tickets are created (null = no forced category).
-    defaultCategory: null,
+    defaultCategory: 1522268699652915320,
 
     // Role IDs allowed to manage/support tickets.
     supportRoles: [],
@@ -242,10 +242,10 @@ export const botConfig = {
     defaultPriority: "none",
 
     // Category ID where closed tickets are archived.
-    archiveCategory: null,
+    archiveCategory: 1522268826165711029,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1522268699652915320,
   },
 
   // =========================
@@ -278,10 +278,10 @@ export const botConfig = {
   // =========================
   birthday: {
     // Role ID given to users on their birthday.
-    defaultRole: null,
+    defaultRole: 1522267530058530897,
 
     // Channel ID where birthday announcements are posted.
-    announcementChannel: null,
+    announcementChannel: 1483508518731386910,
 
     // Timezone used to calculate birthday dates.
     timezone: "UTC",
@@ -368,9 +368,9 @@ export const botConfig = {
     defaultGoodbyeMessage:
       "{user} has left the server. We now have {memberCount} members.",
     // Channel ID for welcome messages.
-    defaultWelcomeChannel: null,
+    defaultWelcomeChannel: 1483508518731386910,
     // Channel ID for goodbye messages.
-    defaultGoodbyeChannel: null,
+    defaultGoodbyeChannel: 1483508518731386910,
   },
 
   // =========================
@@ -403,18 +403,18 @@ export const botConfig = {
       members: {
         name: "👥 Members",
         description: "Total members in the server",
-        getCount: (guild) => guild.memberCount.toString(),
+        getCount: (1481751681778712746) => guild.memberCount.toString(),
       },
       bots: {
         name: "🤖 Bots",
         description: "Total bot accounts in the server",
-        getCount: (guild) =>
+        getCount: (1481751681778712746) =>
           guild.members.cache.filter((m) => m.user.bot).size.toString(),
       },
       members_only: {
         name: "👤 Humans",
         description: "Total human members (non-bots)",
-        getCount: (guild) =>
+        getCount: (1481751681778712746) =>
           guild.members.cache.filter((m) => !m.user.bot).size.toString(),
       },
     },
